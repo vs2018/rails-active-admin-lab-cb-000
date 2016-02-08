@@ -5,7 +5,6 @@ RSpec.describe "ActiveAdmin" do
   it "has the right resources" do
     expect(ActiveAdmin.application.namespaces[:admin].resources[Artist]).to_not eq nil
     expect(ActiveAdmin.application.namespaces[:admin].resources[Song]).to_not eq nil
-
   end
 
   let(:resource_class) { Artist }
