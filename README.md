@@ -19,7 +19,8 @@ The basic app has been set up with Devise as a starting point.
 
 1. Install and configure ActiveAdmin with the default AdminUser.
 2. Configure ActiveAdmin to allow full management of songs, and allow
-   everything except `delete` for artists.
+   everything except `delete` for artists. **Hint:** Also make sure you
+remove any defunct `link_to`s from your views.
 3. Remove the ability to create, destroy, and edit songs and artists outside of
    ActiveAdmin
 4. Make sure tests pass!
