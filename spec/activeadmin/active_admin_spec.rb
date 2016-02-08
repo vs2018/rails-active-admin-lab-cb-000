@@ -3,8 +3,8 @@ require 'rails_helper'
 RSpec.describe "ActiveAdmin" do
 
   it "has the right resources" do
-    expect(ActiveAdmin.application.namespaces[:admin].resources).to have_key("Artist") 
-    expect(ActiveAdmin.application.namespaces[:admin].resources).to have_key("Song") 
+    expect(ActiveAdmin.application.namespaces[:admin].resources[Artist]).to_not eq nil
+    expect(ActiveAdmin.application.namespaces[:admin].resources[Song]).to_not eq nil
   end
 
   let(:resource_class) { Artist }
