@@ -1,4 +1,4 @@
-# Long-Running Tasks Lab
+# Active Admin
 
 ## Objectives
 
